@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE443A621B101CD6009062FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE443A611B101CD6009062FD /* AppDelegate.swift */; };
+		EE443A641B101CD6009062FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE443A631B101CD6009062FD /* ViewController.swift */; };
+		EE443A671B101CD6009062FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE443A651B101CD6009062FD /* Main.storyboard */; };
+		EE443A691B101CD6009062FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE443A681B101CD6009062FD /* Images.xcassets */; };
+		EE443A6C1B101CD6009062FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE443A6A1B101CD6009062FD /* LaunchScreen.xib */; };
+		EE443A781B101CD6009062FD /* MyDayliyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE443A771B101CD6009062FD /* MyDayliyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE443A721B101CD6009062FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE443A541B101CD6009062FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE443A5B1B101CD6009062FD;
+			remoteInfo = MyDayliy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE443A5C1B101CD6009062FD /* MyDayliy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDayliy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE443A601B101CD6009062FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE443A611B101CD6009062FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE443A631B101CD6009062FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE443A661B101CD6009062FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE443A681B101CD6009062FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EE443A6B1B101CD6009062FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EE443A711B101CD6009062FD /* MyDayliyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDayliyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE443A761B101CD6009062FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE443A771B101CD6009062FD /* MyDayliyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDayliyTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE443A591B101CD6009062FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE443A6E1B101CD6009062FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE443A531B101CD6009062FD = {
+			isa = PBXGroup;
+			children = (
+				EE443A5E1B101CD6009062FD /* MyDayliy */,
+				EE443A741B101CD6009062FD /* MyDayliyTests */,
+				EE443A5D1B101CD6009062FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE443A5D1B101CD6009062FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE443A5C1B101CD6009062FD /* MyDayliy.app */,
+				EE443A711B101CD6009062FD /* MyDayliyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE443A5E1B101CD6009062FD /* MyDayliy */ = {
+			isa = PBXGroup;
+			children = (
+				EE443A611B101CD6009062FD /* AppDelegate.swift */,
+				EE443A631B101CD6009062FD /* ViewController.swift */,
+				EE443A651B101CD6009062FD /* Main.storyboard */,
+				EE443A681B101CD6009062FD /* Images.xcassets */,
+				EE443A6A1B101CD6009062FD /* LaunchScreen.xib */,
+				EE443A5F1B101CD6009062FD /* Supporting Files */,
+			);
+			path = MyDayliy;
+			sourceTree = "<group>";
+		};
+		EE443A5F1B101CD6009062FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE443A601B101CD6009062FD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE443A741B101CD6009062FD /* MyDayliyTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE443A771B101CD6009062FD /* MyDayliyTests.swift */,
+				EE443A751B101CD6009062FD /* Supporting Files */,
+			);
+			path = MyDayliyTests;
+			sourceTree = "<group>";
+		};
+		EE443A751B101CD6009062FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE443A761B101CD6009062FD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE443A5B1B101CD6009062FD /* MyDayliy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE443A7B1B101CD6009062FD /* Build configuration list for PBXNativeTarget "MyDayliy" */;
+			buildPhases = (
+				EE443A581B101CD6009062FD /* Sources */,
+				EE443A591B101CD6009062FD /* Frameworks */,
+				EE443A5A1B101CD6009062FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyDayliy;
+			productName = MyDayliy;
+			productReference = EE443A5C1B101CD6009062FD /* MyDayliy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE443A701B101CD6009062FD /* MyDayliyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE443A7E1B101CD6009062FD /* Build configuration list for PBXNativeTarget "MyDayliyTests" */;
+			buildPhases = (
+				EE443A6D1B101CD6009062FD /* Sources */,
+				EE443A6E1B101CD6009062FD /* Frameworks */,
+				EE443A6F1B101CD6009062FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE443A731B101CD6009062FD /* PBXTargetDependency */,
+			);
+			name = MyDayliyTests;
+			productName = MyDayliyTests;
+			productReference = EE443A711B101CD6009062FD /* MyDayliyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE443A541B101CD6009062FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = yong;
+				TargetAttributes = {
+					EE443A5B1B101CD6009062FD = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					EE443A701B101CD6009062FD = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = EE443A5B1B101CD6009062FD;
+					};
+				};
+			};
+			buildConfigurationList = EE443A571B101CD6009062FD /* Build configuration list for PBXProject "MyDayliy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE443A531B101CD6009062FD;
+			productRefGroup = EE443A5D1B101CD6009062FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE443A5B1B101CD6009062FD /* MyDayliy */,
+				EE443A701B101CD6009062FD /* MyDayliyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE443A5A1B101CD6009062FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE443A671B101CD6009062FD /* Main.storyboard in Resources */,
+				EE443A6C1B101CD6009062FD /* LaunchScreen.xib in Resources */,
+				EE443A691B101CD6009062FD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE443A6F1B101CD6009062FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE443A581B101CD6009062FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE443A641B101CD6009062FD /* ViewController.swift in Sources */,
+				EE443A621B101CD6009062FD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE443A6D1B101CD6009062FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE443A781B101CD6009062FD /* MyDayliyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE443A731B101CD6009062FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE443A5B1B101CD6009062FD /* MyDayliy */;
+			targetProxy = EE443A721B101CD6009062FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE443A651B101CD6009062FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE443A661B101CD6009062FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE443A6A1B101CD6009062FD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE443A6B1B101CD6009062FD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE443A791B101CD6009062FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE443A7A1B101CD6009062FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE443A7C1B101CD6009062FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyDayliy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE443A7D1B101CD6009062FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyDayliy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EE443A7F1B101CD6009062FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyDayliyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyDayliy.app/MyDayliy";
+			};
+			name = Debug;
+		};
+		EE443A801B101CD6009062FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyDayliyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyDayliy.app/MyDayliy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE443A571B101CD6009062FD /* Build configuration list for PBXProject "MyDayliy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE443A791B101CD6009062FD /* Debug */,
+				EE443A7A1B101CD6009062FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE443A7B1B101CD6009062FD /* Build configuration list for PBXNativeTarget "MyDayliy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE443A7C1B101CD6009062FD /* Debug */,
+				EE443A7D1B101CD6009062FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EE443A7E1B101CD6009062FD /* Build configuration list for PBXNativeTarget "MyDayliyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE443A7F1B101CD6009062FD /* Debug */,
+				EE443A801B101CD6009062FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE443A541B101CD6009062FD /* Project object */;
+}
