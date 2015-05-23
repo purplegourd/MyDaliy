@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E0BCD1BB-870A-4C10-B4C2-34827864D6B4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5411D764061345416279EA686C2290F43F4A9DA5</key>
+		<string>https://github.com/purplegourd/MyDaliy.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MyDayliy.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5411D764061345416279EA686C2290F43F4A9DA5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/purplegourd/MyDaliy.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5411D764061345416279EA686C2290F43F4A9DA5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5411D764061345416279EA686C2290F43F4A9DA5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyDayliy</string>
+		</dict>
+	</array>
+</dict>
+</plist>
