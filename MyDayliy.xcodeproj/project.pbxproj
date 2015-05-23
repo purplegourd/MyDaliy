@@ -13,6 +13,7 @@
 		EE443A691B101CD6009062FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE443A681B101CD6009062FD /* Images.xcassets */; };
 		EE443A6C1B101CD6009062FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE443A6A1B101CD6009062FD /* LaunchScreen.xib */; };
 		EE443A781B101CD6009062FD /* MyDayliyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE443A771B101CD6009062FD /* MyDayliyTests.swift */; };
+		EE443A821B102513009062FD /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE443A811B102513009062FD /* SubViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		EE443A711B101CD6009062FD /* MyDayliyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDayliyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE443A761B101CD6009062FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE443A771B101CD6009062FD /* MyDayliyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDayliyTests.swift; sourceTree = "<group>"; };
+		EE443A811B102513009062FD /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				EE443A611B101CD6009062FD /* AppDelegate.swift */,
 				EE443A631B101CD6009062FD /* ViewController.swift */,
 				EE443A651B101CD6009062FD /* Main.storyboard */,
+				EE443A811B102513009062FD /* SubViewController.swift */,
 				EE443A681B101CD6009062FD /* Images.xcassets */,
 				EE443A6A1B101CD6009062FD /* LaunchScreen.xib */,
 				EE443A5F1B101CD6009062FD /* Supporting Files */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE443A641B101CD6009062FD /* ViewController.swift in Sources */,
+				EE443A821B102513009062FD /* SubViewController.swift in Sources */,
 				EE443A621B101CD6009062FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
