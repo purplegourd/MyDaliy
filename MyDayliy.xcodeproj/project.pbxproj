@@ -14,6 +14,10 @@
 		EE443A6C1B101CD6009062FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE443A6A1B101CD6009062FD /* LaunchScreen.xib */; };
 		EE443A781B101CD6009062FD /* MyDayliyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE443A771B101CD6009062FD /* MyDayliyTests.swift */; };
 		EE443A821B102513009062FD /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE443A811B102513009062FD /* SubViewController.swift */; };
+		EE443A851B1049FD009062FD /* Requsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE443A841B1049FD009062FD /* Requsts.swift */; };
+		EE65D5DA1B10798F0094E0C9 /* Encoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65D5D71B10798F0094E0C9 /* Encoders.swift */; };
+		EE65D5DB1B10798F0094E0C9 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65D5D81B10798F0094E0C9 /* ImageLoader.swift */; };
+		EE65D5DC1B10798F0094E0C9 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65D5D91B10798F0094E0C9 /* KeychainWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,11 @@
 		EE443A761B101CD6009062FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE443A771B101CD6009062FD /* MyDayliyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDayliyTests.swift; sourceTree = "<group>"; };
 		EE443A811B102513009062FD /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
+		EE443A841B1049FD009062FD /* Requsts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requsts.swift; sourceTree = "<group>"; };
+		EE65D5D71B10798F0094E0C9 /* Encoders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encoders.swift; sourceTree = "<group>"; };
+		EE65D5D81B10798F0094E0C9 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		EE65D5D91B10798F0094E0C9 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		EE65D5E01B1083510094E0C9 /* Imports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Imports.h; path = ../Imports.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +70,7 @@
 		EE443A531B101CD6009062FD = {
 			isa = PBXGroup;
 			children = (
+				EE443A831B1049E3009062FD /* Lib */,
 				EE443A5E1B101CD6009062FD /* MyDayliy */,
 				EE443A741B101CD6009062FD /* MyDayliyTests */,
 				EE443A5D1B101CD6009062FD /* Products */,
@@ -113,6 +123,18 @@
 				EE443A761B101CD6009062FD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE443A831B1049E3009062FD /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				EE65D5E01B1083510094E0C9 /* Imports.h */,
+				EE65D5D71B10798F0094E0C9 /* Encoders.swift */,
+				EE65D5D81B10798F0094E0C9 /* ImageLoader.swift */,
+				EE65D5D91B10798F0094E0C9 /* KeychainWrapper.swift */,
+				EE443A841B1049FD009062FD /* Requsts.swift */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +237,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE65D5DB1B10798F0094E0C9 /* ImageLoader.swift in Sources */,
 				EE443A641B101CD6009062FD /* ViewController.swift in Sources */,
 				EE443A821B102513009062FD /* SubViewController.swift in Sources */,
+				EE65D5DC1B10798F0094E0C9 /* KeychainWrapper.swift in Sources */,
+				EE65D5DA1B10798F0094E0C9 /* Encoders.swift in Sources */,
 				EE443A621B101CD6009062FD /* AppDelegate.swift in Sources */,
+				EE443A851B1049FD009062FD /* Requsts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +373,7 @@
 				INFOPLIST_FILE = MyDayliy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Imports.h;
 			};
 			name = Debug;
 		};
@@ -357,6 +384,7 @@
 				INFOPLIST_FILE = MyDayliy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Imports.h;
 			};
 			name = Release;
 		};
@@ -413,6 +441,7 @@
 				EE443A7D1B101CD6009062FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE443A7E1B101CD6009062FD /* Build configuration list for PBXNativeTarget "MyDayliyTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +450,7 @@
 				EE443A801B101CD6009062FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
