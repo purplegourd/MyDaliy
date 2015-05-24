@@ -18,6 +18,7 @@
 		EE65D5DA1B10798F0094E0C9 /* Encoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65D5D71B10798F0094E0C9 /* Encoders.swift */; };
 		EE65D5DB1B10798F0094E0C9 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65D5D81B10798F0094E0C9 /* ImageLoader.swift */; };
 		EE65D5DC1B10798F0094E0C9 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65D5D91B10798F0094E0C9 /* KeychainWrapper.swift */; };
+		EE9AE9E81B11AFD900142EA9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9AE9E71B11AFD900142EA9 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		EE65D5D81B10798F0094E0C9 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		EE65D5D91B10798F0094E0C9 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		EE65D5E01B1083510094E0C9 /* Imports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Imports.h; path = ../Imports.h; sourceTree = "<group>"; };
+		EE9AE9E71B11AFD900142EA9 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +91,10 @@
 		EE443A5E1B101CD6009062FD /* MyDayliy */ = {
 			isa = PBXGroup;
 			children = (
+				EE9AE9E91B11BF4000142EA9 /* Model */,
+				EE9AE9E61B11AED400142EA9 /* VC */,
 				EE443A611B101CD6009062FD /* AppDelegate.swift */,
-				EE443A631B101CD6009062FD /* ViewController.swift */,
 				EE443A651B101CD6009062FD /* Main.storyboard */,
-				EE443A811B102513009062FD /* SubViewController.swift */,
 				EE443A681B101CD6009062FD /* Images.xcassets */,
 				EE443A6A1B101CD6009062FD /* LaunchScreen.xib */,
 				EE443A5F1B101CD6009062FD /* Supporting Files */,
@@ -135,6 +137,23 @@
 				EE443A841B1049FD009062FD /* Requsts.swift */,
 			);
 			path = Lib;
+			sourceTree = "<group>";
+		};
+		EE9AE9E61B11AED400142EA9 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				EE443A631B101CD6009062FD /* ViewController.swift */,
+				EE443A811B102513009062FD /* SubViewController.swift */,
+				EE9AE9E71B11AFD900142EA9 /* MainVC.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		EE9AE9E91B11BF4000142EA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +258,7 @@
 			files = (
 				EE65D5DB1B10798F0094E0C9 /* ImageLoader.swift in Sources */,
 				EE443A641B101CD6009062FD /* ViewController.swift in Sources */,
+				EE9AE9E81B11AFD900142EA9 /* MainVC.swift in Sources */,
 				EE443A821B102513009062FD /* SubViewController.swift in Sources */,
 				EE65D5DC1B10798F0094E0C9 /* KeychainWrapper.swift in Sources */,
 				EE65D5DA1B10798F0094E0C9 /* Encoders.swift in Sources */,
