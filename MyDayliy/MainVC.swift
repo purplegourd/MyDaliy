@@ -28,6 +28,7 @@ class MainVC: UIViewController {
         let ls = cell.viewWithTag(100) as! UILabel
         let dt = cell.viewWithTag(101) as! UILabel
         ls.text = list[indexPath.row]
+        dt.text = "==="+String(indexPath.row+1)+"==="
         return cell
     }
     
