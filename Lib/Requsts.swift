@@ -11,16 +11,16 @@ import Foundation
 /**
     网络请求类
 */
-class Rquests {
+class Requests {
     struct Config
     {
-        static var Host:String = "www.clgna.com"
+        static var Host:String = "localhost"
         static var _queue:NSOperationQueue = NSOperationQueue()
     }
     
     class func setConfig( host:String, port:UInt8 )
     {
-        Rquests.Config.Host = host
+        Requests.Config.Host = host
     }
     
     /**
@@ -41,7 +41,7 @@ class Rquests {
         }
         
         // 拼接
-        let url_str = String().stringByAppendingFormat( "http://%@%@", Rquests.Config.Host, action )
+        let url_str = String().stringByAppendingFormat( "http://%@%@", Requests.Config.Host, action )
         
         let url = NSURL( string: url_str )!
         
@@ -50,7 +50,6 @@ class Rquests {
         req.setValue( "application/json; charset=utf-8", forHTTPHeaderField: "Content-Type" )
         req.setValue( "", forHTTPHeaderField: "Accept-Encoding" )
         req.HTTPBody = send_str.dataUsingEncoding( NSUTF8StringEncoding , allowLossyConversion: false )
-        
         NSURLSession.sharedSession().dataTaskWithRequest( req, completionHandler: { data, res, err -> Void in
             
             dispatch_async( dispatch_get_main_queue(), { () -> Void in
@@ -65,13 +64,14 @@ class Rquests {
                 let json_obj: AnyObject! = Encoders.decodeJSON( datastring as String )
                 
                 if( json_obj == nil ) { return handler( isok: false, error: "收到异常数据", data: nil, errorn: err ) }
-                println( "GYC.callback \(action) \(json_obj)" )
+                //println( "GYC.callback \(action) \(json_obj)" )
                 
                 if let r = json_obj as? Dictionary<String,AnyObject>
                 {
                     let error:String! = r["error"] as? String
                     if( r["isok"] as! Bool == true )
                     {
+                        //println(r["data"])
                         handler( isok: true, error: error, data: r, errorn: err )
                     }
                     else
@@ -94,20 +94,22 @@ class Rquests {
         var error_msg:String = ""
         var cmpArgs = ""
         
-        for (key,value) in args{
-            cmpArgs += "\(key as NSString)=\(value as NSString)&"
+        if(!args.isEmpty){
+            for (key,value) in args{
+                cmpArgs += "\(key as NSString)=\(value as NSString)&"
+            }
+            cmpArgs = dropLast(cmpArgs)
         }
-        cmpArgs = dropLast(cmpArgs)
         
-        NSLog("comArgs: %@",cmpArgs)
+        //NSLog("comArgs: %@",cmpArgs)
         
         //var post:NSString = cmpArgs
         var post:NSString = Encoders.encodeJSON(args)
-        println(post)
-        NSLog("PostData: %@",post)
+        //println(post)
+        //NSLog("PostData: %@",post)
         
         //拼接url
-        let url_str = String().stringByAppendingFormat( "http://%@%@", Rquests.Config.Host, action )
+        let url_str = String().stringByAppendingFormat( "http://%@%@", Requests.Config.Host, action )
         var url:NSURL = NSURL(string: url_str)!
         
         //var postData:NSData = post.dataUsingEncoding(NSASCIIStringEncoding)!
@@ -132,26 +134,26 @@ class Rquests {
         if ( urlData != nil ) {
             let res = response as! NSHTTPURLResponse!;
             
-            NSLog("Response code: %ld", res.statusCode);
+            //NSLog("Response code: %ld", res.statusCode);
             
             if (res.statusCode >= 200 && res.statusCode < 300)
             {
                 var responseData:NSString  = NSString(data:urlData!, encoding:NSUTF8StringEncoding)!
                 
-                NSLog("Response ==> %@", responseData);
+                //NSLog("Response ==> %@", responseData);
                 
                 var error: NSError?
                 
                 if let jsonData:NSDictionary = NSJSONSerialization.JSONObjectWithData(urlData!, options:NSJSONReadingOptions.MutableContainers , error: &error) as? NSDictionary {
-                    NSLog("result : %@", jsonData)
+                    //NSLog("result : %@", jsonData)
                     
                     let success:NSInteger = jsonData.valueForKey("isok") as! NSInteger
                     
-                    NSLog("Success: %ld", success);
+                    //NSLog("Success: %ld", success);
                     
                     if(success == 1)
                     {
-                        NSLog("SUCCESS")
+                        //NSLog("SUCCESS")
                         //println("##########")
                         //println(jsonData)
                         //println("##########")
